@@ -6,11 +6,12 @@
     <title>Portafolio &mdash; Cristian Dinamarca</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
 
-    <nav class="navbar fixed-top justify-content-center navbar-expand-lg navbar-light bg-light bg-transparent">
+    <nav class="navbar fixed-top justify-content-center navbar-expand-lg navbar-dark">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbw ar-toggler-icon"></span>
       </button>
@@ -18,13 +19,19 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#sobre-mi">Sobre Mi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link" href="#mi-experiencia">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#trabajos">Trabajos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
           </li>
         </ul>
       </div>
@@ -32,25 +39,25 @@
     <!-- FIN NAVEGACION -->
 
     <header id="hero" class="bgimage vh-80 mb-5">
-      <div class="jumbotron jumbotron-fluid vh-80 d-flex align-items-center">
+      <div class="jumbotron jumbotron-fluid vh-80 d-flex align-items-center text-dark">
         <div class="container">
-          <h1 class="display-4 font-weight-bold">Texto Principal h1</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem veniam facilis mollitia deserunt eligendi nobis, aliquid sed, dolores tempore dolorem assumenda recusandae asperiores hic? Labore consequuntur natus temporibus facilis.</p>
+        <h1 class="display-4 font-weight-bold">¡Hola!, mi nombre es <br> Cristian Dinamarca</h1>
+          <h2>Soy Productor Crossmedia especializado en front-end.</h2>
         </div>
       </div>
     </header>
 
-    <main id="main">
-      <section id="sobre-mi">
-        <div class="container">
+    <main id="main"">
+      <section id="sobre-mi" class="d-none d-sm-block pt-5 pb-3">
+        <div class="container mt-5">
           <div class="row">
-            <div class="col-12 col-md-3">
-              <h3>Sobre mi.</h3>
+            <div class="col-12 col-md-2">
+              <h3><span>Sobre mi.</span></h3>
             </div>
-            <div class="col-12 col-md-4 offset-1">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolorem perspiciatis ea ut sapiente optio officia fugit, exercitationem blanditiis officiis quibusdam voluptates reiciendis, labore aliquid tempore, at soluta temporibus aliquam.</p>
+            <div class="col-12 col-md-5">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolorem perspiciatis ea ut sapiente optio officia fugit, exercitationem blanditiis officiis quibusdam voluptates reiciendis, labore aliquid tempore, at soluta temporibus aliquam</p>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-5">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae laborum ipsa quas dolor, dicta ratione modi, facere quidem dignissimos error laudantium iste ipsum molestiae itaque soluta reiciendis omnis veritatis at.</p>
             </div>
           </div>
@@ -62,24 +69,63 @@
           <div class="container">
             <div class="row">
               <div class="col-12 text-center my-5">
-                <h2 class="titulo">Mi experiencia.</h2>
+                <h2 class="titulo"><span>Mi experiencia.</span></h2>
               </div>
               <div class="col-12 col-md-6">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque voluptatum iusto et labore, odit fugiat dicta voluptate facilis, quam temporibus fuga illum atque a aperiam odio cumque! Soluta, quibusdam consequuntur.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque voluptatum iusto et labore, odit fugiat dicta voluptate facilis, quam temporibus fuga illum atque a aperiam odio cumque! Soluta, quibusdam consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo delectus architecto, tempora quos amet eaque atque, sunt quibusdam laudantium at ratione id possimus aliquam quod suscipit distinctio, totam cupiditate modi.</p>
               </div>
               <div class="col-12 col-md-6">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque voluptatum iusto et labore, odit fugiat dicta voluptate facilis, quam temporibus fuga illum atque a aperiam odio cumque! Soluta, quibusdam consequuntur.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque voluptatum iusto et labore, odit fugiat dicta voluptate facilis, quam temporibus fuga illum atque a aperiam odio cumque! Soluta, quibusdam consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quae fugit voluptatibus at, explicabo voluptate sit veritatis vero perspiciatis perferendis iste architecto recusandae corrupti libero, nam eius cum? Atque, totam!</p>
               </div>
             </div>
           </div>
       </section>
       <!-- FIN MI EXPERIENCIA -->
 
+      <section id="trabajos"class="container-fluid mb-5">
+        <div>
+          <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+              <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img src="assets/img/imagen-01.jpg" class="img-fluid" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/imagen-02.png" class="img-fluid" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/imagen-03.png" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- TRABAJOS -->
+
+      <section id="contacto" class="mb-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="typeform-widget" data-url="https://cristian647094.typeform.com/to/CrP4Or" class="w-100" style="height:500px"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FIN SOBRE MI-->
+
     </main>
     <!-- FIN MAIN -->
 
     <footer id="footer">
+      <div class="container">
 
+      </div>
     </footer>
     <!-- FIN FOOTER -->
 
@@ -87,7 +133,32 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="assets/js/scripts.js"></script>
+    <script>
+      var mySwiper = new Swiper ('.swiper-container', {
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+          },
+        }
+      })
+    </script>
   </body>
 </html>
