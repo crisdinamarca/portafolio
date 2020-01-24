@@ -30,6 +30,12 @@ h3 span:before{
 h3 span:before{
     left: 0px;
 }
+.btn-primary{
+    background-color: #7bff7b;
+    border-color: #7bff7b;
+    color: #515165;
+    font-weight: bold;
+}
 .navbar{
     background-color: #7bff7b;
 }
@@ -127,6 +133,28 @@ h3 span:before{
 }
 #mi-experiencia p:first-child{
     line-height: 1.6em;
+    font-size: 21px;
+}
+
+/* CONTACTO */
+.accordion>.card:not(:last-of-type),
+.accordion>.card:not(:first-of-type),
+.accordion>.card>.card-header{
+    background-color: transparent;
+}
+.accordion>.card,
+.accordion>.card>.card-header{
+    border: none;
+}
+.accordion>.card:not(:first-of-type),
+.accordion>.card:not(:last-of-type){
+    border-bottom: solid 1px #70708a;
+}
+.accordion .card .btn-link{
+    letter-spacing: 0.035em;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     font-size: 21px;
 }
 

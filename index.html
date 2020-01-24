@@ -120,22 +120,71 @@
       </section>
       <!-- TRABAJOS -->
 
-      <section id="contacto" class="mb-5">
-        <div class="container-fluid">
+      <section id="contacto" class="mb-5 py-5">
+        <div class="container">
           <div class="row">
-            <div class="col-12">
-              
+              <div class="col-12 col-md-3">
+                  <h3 class="mb-4"><span>Contacto</span></h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptate dignissimos assumenda reprehenderit blanditiis officia ducimus in quis quas est?
+                  </p>
+              </div>
+              <div class="col-12 col-md-8 offset-md-1">
+                <div class="accordion" id="accordionExample">
+                  <div class="card">
+                    <div class="card-header px-0" id="headingOne">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Contáctame por WhatsApp
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="card-body pl-0 pt-0">
+                        <div class="row">
+                          <div class="col-1">
+                            <i class="fab fa-whatsapp fa-3x"></i>
+                          </div>
+                          <div class="col-11">
+                            <p>Si quieres enviarme un mensaje, ya sea de texto o audio a mi WhatsApp, por favor haz click en el botón verde.</p>
+                            <a class="btn btn-primary" href="https://wa.me/56982680615">Enviar mensaje a Whatsapp</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- WHATSAPP-->
+
+                  <div class="card">
+                    <div class="card-header px-0" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed pl-0" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Envíame un E-Mail
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <div class="card-body pl-0 pt-0">
+                        <div class="typeform-widget" data-url="https://cristian647094.typeform.com/to/hOMRew" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- EMAIL-->
+                  </div>
+                  <!-- FIN ACORDEON -->
+                </div>
             </div>
           </div>
         </div>
       </section>
       <!-- FIN CONTACTO -->
-      
+
     </main>
     <!-- FIN MAIN -->
 
     <footer id="footer">
       <div class="container">
+        
       </div>
     </footer>
     <!-- FIN FOOTER -->
@@ -149,33 +198,8 @@
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="https://kit.fontawesome.com/55c5382b91.js" crossorigin="anonymous"></script>
     
-    <!-- SCRIPTS -->
+    <!-- MI SCRIPT -->
     <script src="assets/js/scripts.js"></script>
-    <script>
-      var mySwiper = new Swiper ('.swiper-container', {
-        loop: true,
-        pagination: {
-          el: '.swiper-pagination',
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        breakpoints: {
-          768: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            autoplay: {
-              delay: 5000,
-            },
-          },
-          1024: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-        }
-      })
-    </script>
-
+  
   </body>
 </html>
