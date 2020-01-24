@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+    /* SWIPER */
     $("a").on('click', function(event) {
       if (this.hash !== "") {
         event.preventDefault();
@@ -10,6 +12,10 @@ $(document).ready(function(){
   
           window.location.hash = hash;
         });
-      } // End if
+      }
     });
+
+    /* TOOLTIP */
+    $('[data-toggle="tooltip"]').tooltip();
+
   });

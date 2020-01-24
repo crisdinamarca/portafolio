@@ -3,6 +3,13 @@ html body{
     background-color: #5c5c6d;
     color: #FFF;
 }
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+ul{
+    list-style-type:none;
+}
 h1,h2,h3,h4,h5,h6, .navbar-brand{
     font-family: 'Roboto Slab', serif;
 }
@@ -40,6 +47,23 @@ h3 span:before{
     background-color: #5c5c6d;
     -webkit-box-shadow: 0px 10px 36px -6px rgba(0,0,0,0.31);
     box-shadow: 0px 10px 36px -6px rgba(0,0,0,0.31);
+}
+.tooltip-inner{
+    color:#5c5c6d;
+    background-color:#7bff7b;
+    font-weight: bold;
+}
+.tooltip.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .tooltip.bs-tooltip-bottom .arrow::before {
+    margin-left: -3px;
+    content: "";
+    border-width: 0 5px 5px;
+    border-bottom-color: #7bff7b;
+}
+.tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before, .tooltip.bs-tooltip-top .arrow::before {
+    margin-left: -3px;
+    content: "";
+    border-width: 5px 5px 0;
+    border-top-color: #7bff7b;
 }
 #main h2,
 #main h3{
@@ -82,9 +106,28 @@ h3 span:before{
 }
 
 /* SOBRE MI */
+#sobre-mi{
+    background-color: #515165;
+}
 #sobre-mi p{
     font-size: 19px;
     line-height: 1.65em;
+}
+
+/* MI EXPERIENCIA */
+#mi-experiencia ul li{
+    margin-right: 37px;
+    padding: 14px;
+}
+#mi-experiencia ul li i{
+    font-size: 50px;
+}
+#mi-experiencia h4{
+    font-size: 21px;
+}
+#mi-experiencia p:first-child{
+    line-height: 1.6em;
+    font-size: 21px;
 }
 
 /* SLIDER */
