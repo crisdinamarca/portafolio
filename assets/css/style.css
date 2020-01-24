@@ -1,7 +1,22 @@
 /* GENERALES */
+html{
+    scroll-behavior: smooth;
+}
 html body{
     background-color: #5c5c6d;
     color: #FFF;
+}
+::-moz-selection {
+    color: #5c5c6d;
+    background: rgba(255,255,255,0.99);
+}  
+a{
+    -webkit-transition:all .2s ease-in;
+    transition:all .2s ease-in;
+}
+::selection {
+    color: #5c5c6d;
+    background: rgba(255,255,255,0.99);
 }
 p{
     font-family: 'Open Sans', sans-serif;
@@ -30,11 +45,15 @@ h3 span:before{
 h3 span:before{
     left: 0px;
 }
-.btn-primary{
+.btn-primary,
+.btn-primary:hover{
     background-color: #7bff7b;
     border-color: #7bff7b;
     color: #515165;
     font-weight: bold;
+}
+.btn-primary:hover{
+    opacity: 0.8;
 }
 .navbar{
     background-color: #7bff7b;
@@ -42,6 +61,19 @@ h3 span:before{
 .navbar-dark .navbar-brand{
     font-weight: 700;
     letter-spacing: 0.025em;
+}
+html .navbar-dark .navbar-toggler{
+    border-color: transparent !important;    
+}
+html .navbar-toggler:focus,
+html .navbar-toggler:hover{
+    outline: 0;
+}
+html .chocolat-overlay{
+    background-color: #000;
+}
+html .chocolat-wrapper{
+    z-index: 100000;
 }
 .vh-80{
     min-height: 100vh;
@@ -158,6 +190,24 @@ h3 span:before{
     font-size: 21px;
 }
 
+/* FOOTER */
+#footer{
+    background-color: #515165;
+}
+#footer p:first-child{
+    letter-spacing: 0.035em;
+}
+#footer p:last-child{
+    font-size: 12px;
+}
+#footer .sociales a{
+    margin: 0px 8px;
+    color: #FFF;
+}
+#footer .sociales a:hover{
+    opacity: 0.7;
+}
+
 /* SLIDER */
 .swiper-pagination-bullet{
     width: 14px;
@@ -202,4 +252,15 @@ h3 span:before{
 .swiper-button-prev:after{
     -webkit-filter: brightness(2);
     filter: brightness(2);
+}
+
+/* RESPONSIVE */
+@media only screen and (min-width: 0px) and (max-width: 768px){
+    #hero h1{
+        display: block;
+        font-size: 41px;
+    }
+    #hero h2{
+        font-size: 24px;
+    }
 }

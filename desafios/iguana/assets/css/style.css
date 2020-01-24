@@ -1,0 +1,159 @@
+/* GENERALES */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #000000;
+    font-family: 'Raleway', sans-serif;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+a:hover{
+    opacity: 0.7;
+}
+ul{
+    list-style-type: none;
+}
+
+/* HEADER */
+#header h1{
+    font-size: 50px;
+    line-height: 59px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0px;
+}
+#header h1 a{
+    color: #FFFFFF;
+}
+#header img{
+    width: 100%;
+}
+
+/* DESTACADO */
+/* Las alineaciones las podría haber hecho con flexbox que es mucho más fácil, pero las hice con la propiedad inline-block para cumplir con la tarea */
+#destacado{
+    width: 960px;
+    margin: 50px auto;
+    background-color: #000000;
+}
+#destacado .destacado-texto{
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+#destacado p{
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+#destacado img{
+    width: 400px;
+    height: auto;
+    margin-left: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* CARACTERISTICAS*/
+#caracteristicas{
+    background-color: #1E1A13;
+    padding: 90px 0px;
+    text-align: center;
+}
+#caracteristicas h2{
+    color: #FFF;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+}
+#caracteristicas ul{
+    width: 960px;
+    margin: auto;
+    display: block;
+    color: #FFFFFF;
+}
+#caracteristicas ul li{
+    display: inline-block;
+    margin: 0px 70px;
+}
+#caracteristicas ul li i{
+    display: block;
+    margin-bottom: 20px;
+}
+#caracteristicas ul li span{
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 300;
+}
+
+/* GALERIA */
+#galeria .centrar{
+    width: 960px;
+    margin: 50px auto;
+}
+#galeria .galeria{
+    width: 31.33%;
+    margin-right: 2.33%;
+    height: 200px;
+    display: inline-block;
+    position: relative;
+}
+#galeria .galeria:last-child{
+    margin-right: 0px;
+}
+#galeria .galeria.img-01{
+    background-image: url(../img/iguana-2.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#galeria .galeria.img-02{
+    background-image: url(../img/iguana-3.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#galeria .galeria.img-03{
+    background-image: url(../img/iguana-4.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#galeria .galeria a{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0;
+}
+#galeria .galeria a:hover{
+    opacity: 0.4;
+}
+#galeria ul li img{
+    width: 100%;
+    height: 100%;
+}
+
+/* FOOTER */
+#footer{
+    background-color: #1E1A13;
+    padding: 30px 0px;
+    text-align: center;
+}
+#footer p{
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
+}

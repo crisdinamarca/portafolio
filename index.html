@@ -3,12 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Portafolio &mdash; Cristian Dinamarca</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,500,700|Open+Sans:300,400,700&display=swap" rel="stylesheet">
+
+    <!-- CSS LIGHTBOX-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    
+    <!-- CSS SWIPER CAROUSEL -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    
+    <!-- CSS PRINCIPAL-->
     <link rel="stylesheet" href="assets/css/style.css">
+
   </head>
   <body>
 
@@ -19,7 +31,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="#hero">Inicio <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
@@ -68,7 +80,7 @@
       </section>
       <!-- FIN SOBRE MI-->
 
-      <section id="mi-experiencia" class="py-5 mb-5">
+      <section id="mi-experiencia" class="py-5 mb-0 mb-md-5">
           <div class="container">
             <div class="row">
               <div class="col-12 text-center my-5">
@@ -102,13 +114,39 @@
               <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <img src="assets/img/trabajo-01.png" class="img-fluid" />
+                      <a data-fancybox="gallery" href="assets/img/trabajo-01.png">
+                        <img src="assets/img/trabajo-01.png" class="img-fluid" />
+                      </a>
                     </div>
                     <div class="swiper-slide">
-                      <img src="assets/img/trabajo-02.png" class="img-fluid" />
+                      <a data-fancybox="gallery" href="assets/img/trabajo-02.png">
+                        <img src="assets/img/trabajo-02.png" class="img-fluid" />
+                      </a>
                     </div>
                     <div class="swiper-slide">
-                      <img src="assets/img/trabajo-03.png" class="img-fluid" />
+                      <a data-fancybox="gallery" href="assets/img/trabajo-03.png">
+                        <img src="assets/img/trabajo-03.png" class="img-fluid" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a target="_blank" href="desafios/meetcoffee/index.html">
+                        <img src="assets/img/trabajo-meetcoffee.png" class="img-fluid" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a target="_blank" href="desafios/iguana/index.html">
+                        <img src="assets/img/trabajo-iguana.png" class="img-fluid" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a target="_blank" href="desafios/cupon/index.html">
+                        <img src="assets/img/trabajo-cuppon.png" class="img-fluid" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a target="_blank" href="desafios/suricata/index.html">
+                        <img src="assets/img/trabajo-suricata.png" class="img-fluid" />
+                      </a>
                     </div>
                 </div>
                 <div class="swiper-button-prev"></div>
@@ -126,7 +164,7 @@
               <div class="col-12 col-md-3">
                   <h3 class="mb-4"><span>Contacto</span></h3>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptate dignissimos assumenda reprehenderit blanditiis officia ducimus in quis quas est?
+                    Si quieres enviarme un mensaje o un comentario por favor escoge una de las dos opciones de contacto.
                   </p>
               </div>
               <div class="col-12 col-md-8 offset-md-1">
@@ -142,12 +180,12 @@
                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                       <div class="card-body pl-0 pt-0">
                         <div class="row">
-                          <div class="col-1">
+                          <div class="col-1 d-none d-md-block">
                             <i class="fab fa-whatsapp fa-3x"></i>
                           </div>
                           <div class="col-11">
                             <p>Si quieres enviarme un mensaje, ya sea de texto o audio a mi WhatsApp, por favor haz click en el botón verde.</p>
-                            <a class="btn btn-primary" href="https://wa.me/56982680615">Enviar mensaje a Whatsapp</a>
+                            <a class="btn btn-primary" target="_blank" href="https://wa.me/56982680615">Enviar mensaje a Whatsapp</a>
                           </div>
                         </div>
                       </div>
@@ -183,8 +221,23 @@
     <!-- FIN MAIN -->
 
     <footer id="footer">
-      <div class="container">
-        
+      <div class="container py-5">
+        <div class="col-12">
+          <ul class="sociales d-flex justify-content-center pl-0">
+            <li class="social-item"><a target="_blank" href="https://www.facebook.com/alonsodenmark?ref=bookmarks"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+            <li class="social-item"><a target="_blank" href="https://twitter.com/alonsodinamarca"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+            <li class="social-item"><a target="_blank" href="https://www.instagram.com/alonsodenmark/"><i class="fab fa-instagram fa-2x"></i></a></li>
+            <li class="social-item"><a target="_blank" href="http://"></a></li>
+          </ul>
+        </div>
+        <div class="col-12">
+          <p class="text-center">
+            2020 © Cristian Dinamarca.
+          </p>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis veniam labore <br>nesciunt modi iusto ipsam consequatur ut ipsum sit deserunt.
+          </p>
+        </div>
       </div>
     </footer>
     <!-- FIN FOOTER -->
@@ -193,12 +246,17 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- JS LIGHTBOX -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     
-    <!-- SWIPER -->
+    <!-- JS SWIPER -->
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <!-- JS FONT AWESOME -->
     <script src="https://kit.fontawesome.com/55c5382b91.js" crossorigin="anonymous"></script>
     
-    <!-- MI SCRIPT -->
+    <!-- JS MI SCRIPT -->
     <script src="assets/js/scripts.js"></script>
   
   </body>
